@@ -12,8 +12,8 @@ unless using_system_libraries?
   require 'rubygems'
   require 'mini_portile2'
 
-  recipe = MiniPortile.new('jq', '1.6')
-  recipe.files = ['https://github.com/stedolan/jq/archive/jq-1.6.tar.gz']
+  recipe = MiniPortile.new('jq', '1.6-m1')
+  recipe.files = ['https://github.com/DougEdey/jq/archive/8a547aa3e13db8e8340bcaf0c1af54979ddf80a3.tar.gz']
   recipe.configure_options = [
     '--enable-shared',
     '--disable-maintainer-mode'
